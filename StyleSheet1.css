@@ -1,0 +1,83 @@
+﻿/* Add this to your StyleSheet1.css file */
+
+/* Set the background color for the entire webpage */
+body {
+    background-color: #3B4664;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator styles (add your existing styles here) */
+.calculator {
+    width: 250px;
+    background-color: #293a5a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #000;
+    color: white;
+    font-size: 1.8em;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #d7cdc3;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+    /* Special button styles */
+    button.del {
+        background-color: #4a5f85;
+        color: white;
+    }
+
+    button.reset {
+        background-color: #4a5f85;
+        color: white;
+    }
+
+    button.equals {
+        background-color: #e34c42;
+        color: white;
+    }
+
+    /* Button hover effect */
+    button:hover {
+        background-color: #bfb5ab;
+    }
+
+    button.equals:hover {
+        background-color: #d93c34;
+    }
+
+    button.del:hover, button.reset:hover {
+        background-color: #405a7b;
+    }
+
+    /* Active button effect */
+    button:active {
+        transform: scale(0.95);
+    }
